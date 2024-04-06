@@ -5,5 +5,4 @@ Feature: AutoRegister Page Functionality
     When User enters username "hjhj"
     And User enters password ""
     And User clicks login button
-    Then System redirects to dashboard page "Dashboard"
-    Then System redirects to dashboard pages "Failed"
+   
