@@ -4,13 +4,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import junit.framework.Assert;
+
 
 public class LoginStep {
 	
@@ -34,19 +34,19 @@ public class LoginStep {
 
 	@When("User enters username {string}")
 	public void user_enters_username(String username) {
-	  WebElement usernameField = driver.findElement(By.xpath("//input[@name='username']"));
+	  WebElement usernameField = driver.findElement(By.xpath("//input[@id='email']"));
 	  usernameField.sendKeys(username);
 	}
 
 	@When("User enters password {string}")
 	public void user_enters_password(String password) {
-		  WebElement passwordField = driver.findElement(By.xpath("//input[@name='password']"));
+		  WebElement passwordField = driver.findElement(By.xpath("//input[@id='pass']"));
 		  passwordField.sendKeys(password);
 	}
 
 	@When("User clicks login button")
 	public void user_clicks_login_button() {
-		  WebElement loginButton = driver.findElement(By.xpath("//button[@type = 'submit']"));
+		  WebElement loginButton = driver.findElement(By.xpath("//button[@id='loginbutton']"));
 		  loginButton.click();
 	}
 
