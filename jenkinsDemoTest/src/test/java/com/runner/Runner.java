@@ -12,8 +12,8 @@ import io.cucumber.junit.CucumberOptions;
 
 
 @CucumberOptions (
-					features = "src/test/resources/smoke/SmokeTest.feature",
-					glue = "com.steps",
+					features = "src/test/resources/smoke/faceBook.feature",
+					glue = "com/steps",
 					plugin = {"pretty",
 					"json:target/cucumber.json",
 					"html:target/cucumber.html"}
