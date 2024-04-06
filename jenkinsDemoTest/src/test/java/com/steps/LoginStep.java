@@ -50,29 +50,6 @@ public class LoginStep {
 		  loginButton.click();
 	}
 
-	@Then("System redirects to dashboard page {string}")
-	public void system_redirects_to_dashboard_page(String pageHeader) throws InterruptedException {
-	   System.out.println("Page Header... " +  pageHeader);
-	   
-	   System.out.println(driver.getTitle());
-	   
-	   Thread.sleep(2000);
-	   driver.quit();
-	}
-
- 
 	
-	@Then("System redirects to dashboard pages {string}")
-	public void system_redirects_to_dashboard_pages(String string) {
-		try {
-			System.out.println("aseetion failure...");
-			//Assert.assertEquals("java", "not java");
-			//Assert.fail();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-	   
-		System.out.println("DONE...");
-	}
  
 }
